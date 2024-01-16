@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Accessible typeahead</title>
+        <meta charset="UTF-8" />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Search</h1>
+        <div id="suggestion-box">
+            <label for="suggestion-query">Query</label>
+            <input 
+                type="text" 
+                id="suggestion-query" 
+                role="combobox" 
+                aria-controls="suggestion-response" 
+                aria-expanded="false" 
+                aria-autocomplete="list" 
+                aria-haspopup="listbox" 
+                autocomplete="off" 
+                autocapitalize="none" 
+            />
+            <ul 
+                id="suggestion-response" 
+                role="listbox" 
+                aria-label="Suggestions" 
+                tabindex="-1" 
+                class="hidden"
+            >
+            
+            </ul>
+            <div id="suggestion-status" aria-live="polite" role="status" class="visually-hidden">
+
+            </div>
+        </div>
+        <script src="./utils.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
