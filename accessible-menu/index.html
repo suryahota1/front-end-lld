@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title>Accessible menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1">
+        <meta name="keywords" content="HTML, CSS, ACCESSIBILITY">
+        <meta name="description" content="Accessibility for menu">
+    </head>
+    <body>
+        
+        <!-- Accordion -->
+        <div>
+            Accordion container
+            <ul class="accordion accordion-controls" aria-label="Accordion group">
+                <li class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-main-control" aria-controls="content-1" aria-expanded="false">
+                            Accordion 1
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="content-1" aria-hidden="true" role="region" aria-label="accorion section" hidden>
+                        <input />
+                        This is accordion 1
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-main-control" aria-controls="content-2" aria-expanded="false">
+                            Accordion 2
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="content-2" aria-hidden="true" role="region" aria-label="accorion section" hidden>
+                        <input />
+                        This is accordion 2
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-main-control" aria-controls="content-3" aria-expanded="false">
+                            Accordion 3
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="content-3" aria-hidden="true" role="region" aria-label="accorion section" hidden>
+                        <input />
+                        This is accordion 3
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+    <script type="text/javascript" src="./index.js"></script>
+</html>
