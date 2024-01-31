@@ -11,6 +11,7 @@ class Accordion {
         currOpen.setAttribute("aria-expanded", status);
         const contentEle = currOpen.closest(".accordion-item").querySelector(".accordion-content");
         contentEle.setAttribute("aria-hidden", !status);
+        
         if ( status ) contentEle.removeAttribute("hidden");
         else contentEle.setAttribute("hidden", true);
     }
