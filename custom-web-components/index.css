@@ -1,0 +1,14 @@
+surya-custom-element {
+    border: none;
+}
+surya-custom-element:--collapsed {
+    border: 1px solid red;
+}
+
+li.expandable::marker {
+    content: "😍";
+}
+
+li.expandable.hidden > ul {
+    display: none;
+}

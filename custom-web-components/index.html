@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom web component tutorial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+        <meta name="keywords" content="HTML,CSS,Wweb component,Shadow DOM">
+        <meta name="description" content="See the power of custom components in HTML5">
+        <link rel="stylesheet" href="./index.css" >
+    </head>
+    <body>
+        <script type="text/javascript" src="./index.js" defer></script>
+        <div id="container">
+            <surya-custom-element name="surya"></surya-custom-element>
+            <p is="surya-custom-paragraph-element">P1</p>
+            <p is="surya-custom-paragraph-element">P2</p>
+            <p is="surya-custom-paragraph-element">P3</p>
+            <p is="surya-custom-paragraph-element">P4</p>
+        </div>
+        <div>
+            <ul is="surya-custom-ul-element">
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>
+                    <ul>
+                        <li>
+                            Item4
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    Item5
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            Item6
+                                        </li>
+                                        <li>
+                                            Item7
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
