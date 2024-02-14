@@ -1,4 +1,5 @@
 // A customized paragraph element
+// document.body.appendChild(document.getElementById("sample").content);
 class CustomizedParagraphElement extends HTMLParagraphElement {
 
     static count = 0;

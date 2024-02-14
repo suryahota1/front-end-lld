@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Accessible slider component</title>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="description" content="Building an accessible slider component">
+    </head>
+    <body>
+        <script type="text/javascript" src="./index.js" defer></script>
+        <input type="range" aria-label="Age range" />
+        <surya-custom-slider 
+            mode="horizontal" 
+            min="0" 
+            max="100" 
+            value="50" 
+            id="temp-slide" 
+            label="Select Temperature"
+        ></surya-custom-slider>
+    </body>
+</html>
