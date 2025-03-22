@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Throttled progress bar demo</title>
+        <link href="./style.css">
+    </head>
+    <body>
+        <main id="task-section">
+            <button id="add-task-btn">Add Task</button>
+            <p>Queued tasks count : <span id="queue-task-count"></span></p>
+            <section id="task-status"></section>
+        </main>
+        <template id="task-progress">
+            <div class="progress-container">
+                <span class="task-id"></span>
+                <progress class="progress-item" max="100" value="0"></progress>
+                <span class="progress-value"></span>
+            </div>
+        </template>
+
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
